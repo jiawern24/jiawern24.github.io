@@ -9,11 +9,12 @@ body {
 	padding: 0;
 	width: fixed;
 	cursor: url(images/trash-icon.png), auto;
+	text-align: center;
 	}
 		
 .wrapper {
 	background: #fff;
-	width: 900px; 
+	width: 972px; 
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 18px 18px;
@@ -64,7 +65,7 @@ h1 {
 		
 h2 {
 	color:navy;
-	font-size: 40px;			
+	font-size: 40px;
 }
 
 h3 {
@@ -76,6 +77,8 @@ p {
 	color:black;
 	font-size: 20px;
 	line-height: 30px;
+	padding-left: 36px;
+	padding-right: 36px;
 }
 		
 a {
@@ -123,11 +126,44 @@ h1.about-title {
 img.recycle-image {
 	text-align: center;
 }
-		
+
+.column {
+	float: left;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.left {
+	float: left;
+	width: 45%;
+}
+
+.right {
+	float: right;
+	width: 55%;
+	padding-top: 50px;
+}
+
+p.action-p {
+	color:black;
+	font-size: 20px;
+	line-height: 10px;
+}
+
 ul {
 	color:black;
 	font-size: 18px;
 	line-height: 30px;
+}
+li {
+	color:black;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: left;
 }
 		
 table {
@@ -145,11 +181,13 @@ tr:nth-child(even) {
 .gallery-grid {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-row-gap: 20px;
+	grid-row-gap: 30px;
+	grid-column-gap: 10px;
 	/*border: solid cornflowerblue 2px;*/
 	justify-items: center;
 	align-items: start;
 	justify-content: space-between;
+	text-align: center;
 }
 
 .gallery-item {
