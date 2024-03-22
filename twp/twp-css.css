@@ -20,6 +20,15 @@ body {
 	padding: 0 18px 18px;
 }
 
+header.site-header {
+	margin: 0 0 0;
+	padding-top: 10px;
+}
+		
+.site-logo-image {
+	height: 100px;
+}
+
 .site-nav a, .page-nav a {
 	text-decoration: none;
 	padding: 10px;
