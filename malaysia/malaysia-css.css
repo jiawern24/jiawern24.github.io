@@ -126,11 +126,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.showcase-item .showcase-p {
-	align-content: left;
-	color: navy;
-}
-
 .profile-container1 {
 	display: grid;
 	grid-template-columns: auto 2fr;
