@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-	background-color: antiquewhite;
+	background-image:repeating-linear-gradient(#010066, #CC0001, #FFFFFF, #FFCC00);
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	font-size: 20px;
 	color:black;
@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: fixed;
-	cursor: url(images/trash-icon.png), auto;
+	cursor: url("images/hibiscus-icon.png"), auto;
 	text-align: center;
 	}
 		
@@ -62,6 +62,19 @@ header.site-header {
 	color:indigo;
 }
 
+.lead {
+    position: relative;
+}
+
+.secondary-statement {
+	position: absolute;
+	top: 20%;
+	color: aliceblue;
+	font-size: 43px;
+}
+
+
+
 h1 {
 	color:cornflowerblue;
 	font-size: 50px;
@@ -113,6 +126,11 @@ section {
     transition: background-color 0.3s ease;
 }
 
+.showcase-p {
+	align-content: left;
+	color: aqua;
+}
+
 .profile-container1 {
 	display: grid;
 	grid-template-columns: auto 2fr;
@@ -150,6 +168,38 @@ section {
 	grid-area: b3;
 }
 
+.profile-container1 {
+	display: grid;
+	gap: 1rem 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+			"1port1 1port2 1port3";
+	}
+.profile-container2 {
+	display: grid;
+	gap: 1rem 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+			"2port1 2port2 2port3";
+	}
+.profile-container3 {
+	display: grid;
+	gap: 1rem 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+			"3port1 3port2 3port3";
+	}
+.profile-container4 {
+	display: grid;
+	gap: 1rem 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+			"4port1 4port2 4port3";
+	}
 
 
 
