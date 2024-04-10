@@ -126,7 +126,7 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.showcase-p {
+.showcase-item .showcase-p {
 	align-content: left;
 	color: aqua;
 }
