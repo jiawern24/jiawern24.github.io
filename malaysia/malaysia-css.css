@@ -12,7 +12,7 @@ body {
 	cursor: url("images/hibiscus-icon.png"), auto;
 	text-align: center;
 	}
-		
+
 .wrapper {
 	background: #fff;
 	width: 1050px; 
@@ -44,13 +44,17 @@ header.site-header {
 		
 .site-nav {
 	background-color: #B4E1FF;
-	text-align: center;
-	position: sticky;
+	text-align: left;
 	top: 20px;
 }
 		
 .site-nav a {
 	color:navy;
+}
+
+.site-nav nav {
+	align-content: center;
+	align-content: center;
 }
 		
 .page-nav {
@@ -72,7 +76,6 @@ header.site-header {
 	color: aliceblue;
 	font-size: 43px;
 }
-
 
 
 h1 {
@@ -195,6 +198,58 @@ section {
 	grid-template-areas:
 			"4port1 4port2 4port3";
 	}
+.wrapper-grid {
+	display: grid;
+  	gap: 1rem 2rem;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-rows: auto auto auto;
+	grid-template-areas:
+            "header header header"
+            "main main aside"
+            "footer footer footer";
+}
+
+.wrapper-grid .site-header {
+	grid-area: header;
+}
+
+.wrapper-grid .micro-reviews {
+	grid-area: aside;
+	font-size: 18px;
+	line-height: 1.5;
+	padding-top: 1.5rem; /* matches page-header padding-top; */
+	padding-right: 2.5rem; /* = 40px */
+}
+
+.wrapper-grid main {
+	grid-area: main;
+	padding-left: 2.5rem;
+}
+
+main h1 {
+	margin: 0 0 1.5em;
+}
+
+.wrapper-grid .site-footer {
+	grid-area: footer;
+}
+
+.article-label {
+	color: #9a9a9a;
+}
+
+.micro-reviews h1 {
+	font-size: 2rem;
+	text-align: left;
+	color: navy;
+	margin: 0 0 1em;
+}
+
+.micro-reviews h2 {
+	font-size: 1.5rem;
+	color: cornflowerblue;
+	margin: 0;
+}
 
 
 
