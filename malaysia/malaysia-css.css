@@ -18,16 +18,17 @@ body {
 	width: 1050px; 
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 18px 18px;
+	padding: 10px 18px 18px;
 }
 
 header.site-header {
 	margin: 0 0 0;
 	padding-top: 10px;
+	display: block;
 }
 
 .site-logo-image {
-	height: 100px;
+	height: 90px;
 }
 
 .site-nav a, .page-nav a {
@@ -44,8 +45,12 @@ header.site-header {
 		
 .site-nav {
 	background-color: #B4E1FF;
-	text-align: left;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	top: 20px;
+	margin: 0 auto;
+	width: 1086px; 
 }
 		
 .site-nav a {
@@ -60,6 +65,8 @@ header.site-header {
 .page-nav {
 	background-color: #B4E1FF;
 	text-align: center;
+	font-size: 20px;
+	width: 710px;
 }
 		
 .page-nav a {
@@ -72,21 +79,23 @@ header.site-header {
 
 .secondary-statement {
 	position: absolute;
-	top: 20%;
-	color: aliceblue;
-	font-size: 43px;
+	top: 15%;
+	color: navy;
+	font-size: 40px;
+	text-align: center;
 }
-
 
 h1 {
 	color:cornflowerblue;
 	font-size: 50px;
-	padding: 30px;
+	padding: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	width: 93%;
 	background-color: aliceblue;
 	text-align: center;
+	align-content: center;
+	
 }
 		
 h2 {
@@ -107,9 +116,38 @@ p {
 	padding-right: 36px;
 }
 
+.caption {
+    margin-top: -10px;
+    font-size: 12px;
+    color: #344175;
+	line-height: 15px;
+}
+
+a {
+	color:violet;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: darkslateblue;
+	background-color:aliceblue;
+	padding: 10px;
+	border-radius: 10px;
+}
+
 section {
     display: block;
     unicode-bidi: isolate;
+}
+
+.showcase {
+	background: hsla(226,56%,83%,1.00);
+	padding-top: 5px;
+	padding-bottom: 30px;
+	border-radius: 1rem;
 }
 
 .showcase-container {
@@ -122,18 +160,17 @@ section {
 .showcase-item {
     background-color: #ffffff;
     flex-basis: calc(33.33% - 20px);
-    padding: 0.5rem 1rem;
+    padding: 0;
     border-radius: 1rem;
     box-sizing: border-box;
     overflow: hidden;
     transition: background-color 0.3s ease;
 }
 
-.profile-container1 {
-	display: grid;
-	grid-template-columns: auto 2fr;
-	gap: 2rem 2rem;
-	align-items: top;
+.showcase-p {
+	color:black;
+	font-size: 17px;
+	line-height: 26px;
 }
 
 .profile-container { /* irregular layour can change the arrangements in templet-area*/
@@ -172,7 +209,8 @@ section {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto;
 	grid-template-areas:
-			"1port1 1port2 1port3";
+			"1port1 1port2 1port3"
+			"1port4 1port5 1port6";
 	}
 .profile-container2 {
 	display: grid;
@@ -190,65 +228,66 @@ section {
 	grid-template-areas:
 			"3port1 3port2 3port3";
 	}
-.profile-container4 {
-	display: grid;
-	gap: 1rem 1rem;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-			"4port1 4port2 4port3";
-	}
+
 .wrapper-grid {
 	display: grid;
   	gap: 1rem 2rem;
-  	grid-template-columns: 1fr 1fr 1fr;
+	text-align: left;
+	padding-right: 0px;
+  	grid-template-columns: 1fr 1fr 0.8fr;
   	grid-template-rows: auto auto auto;
 	grid-template-areas:
-            "header header header"
-            "main main aside"
-            "footer footer footer";
-}
-
-.wrapper-grid .site-header {
-	grid-area: header;
+            "main main aside";
 }
 
 .wrapper-grid .micro-reviews {
 	grid-area: aside;
 	font-size: 18px;
 	line-height: 1.5;
-	padding-top: 1.5rem; /* matches page-header padding-top; */
+	padding-top: 13rem; /* matches page-header padding-top; */
 	padding-right: 2.5rem; /* = 40px */
 }
 
 .wrapper-grid main {
 	grid-area: main;
-	padding-left: 2.5rem;
+	padding-left: 1rem;
 }
 
 main h1 {
-	margin: 0 0 1.5em;
-}
-
-.wrapper-grid .site-footer {
-	grid-area: footer;
-}
-
-.article-label {
-	color: #9a9a9a;
-}
-
-.micro-reviews h1 {
-	font-size: 2rem;
-	text-align: left;
-	color: navy;
-	margin: 0 0 1em;
+	margin: 0 0 1rem;
 }
 
 .micro-reviews h2 {
 	font-size: 1.5rem;
 	color: cornflowerblue;
 	margin: 0;
+	text-align: left;
+	align-content: left;
+}
+
+.micro-reviews h3 {
+	font-size: 13px;
+	text-align: left;
+	align-content: left;
+	line-height: 35px;
+}
+
+.micro-reviews p {
+	font-size: 15px;
+	text-align: left;
+	align-content: left;
+	line-height: 20px;
+}
+
+.category {
+	border: solid navy 2px;
+	border-radius: 1rem;
+	padding: 7px;
+	margin: 10px;
+}
+
+.image {
+	text-align: center; 
 }
 
 
