@@ -66,7 +66,7 @@ header.site-header {
 	background-color: #B4E1FF;
 	text-align: center;
 	font-size: 20px;
-	width: 710px;
+	width: 695px;
 }
 		
 .page-nav a {
@@ -181,7 +181,8 @@ section {
 	grid-template-areas:
 			"p1 b1 b1"
 			"p2 b2 b2"
-			"p3 b3 b3";
+			"p3 b3 b3"
+			"p4 b4 b4";
 }
 
 .port1 {
@@ -201,6 +202,12 @@ section {
 }
 .bio3 {
 	grid-area: b3;
+}
+.port4 {
+	grid-area: p4;
+}
+.bio4 {
+	grid-area: b4;
 }
 
 .profile-container1 {
@@ -234,7 +241,7 @@ section {
   	gap: 1rem 2rem;
 	text-align: left;
 	padding-right: 0px;
-  	grid-template-columns: 1fr 1fr 0.8fr;
+  	grid-template-columns: 1fr 1fr 1fr;
   	grid-template-rows: auto auto auto;
 	grid-template-areas:
             "main main aside";
@@ -290,6 +297,16 @@ main h1 {
 	text-align: center; 
 }
 
+.worldmap {
+	width: 900px;
+	height: 600px;
+	border: solid #5a5a5a 1px;
+	background: url(images/worldmap.svg) no-repeat;
+	background-size: 900px 600px;
+	padding: 0;
+	margin: 0; /* adjust as needed */
+	position: relative; /* needed for positioning the icons */
+}
 
 
 
