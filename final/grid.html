@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>grid</title>
+	
+<style>
+	
+	body {
+		margin: 0;
+		padding: 0;
+		color: #2a2a2a;
+		background: #5a5a5a;
+		font-family: verdana, helvetica, arial, sans-serif; 
+		font-size: 20px;
+		line-height: 150%;  /* adjust as needed */	
+		}
+
+	.wrapper {
+		background: #ffffff;
+		width: 980px;  /* give the element a fixed width */ 
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1.25rem 2.5rem;
+		}
+	
+	h1 {
+		text-align: center;
+		color: navy;
+		margin-bottom: 2.5rem;		
+		}
+	h2 {
+		text-align: left;
+		color: red;
+		margin-bottom: 2.5rem;		
+		}
+	
+	.profile-container {
+		display: grid;
+		gap: 1rem 2rem;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+				"p1 b1 p4"
+				"p2 b2 p4"
+				"p3 b3 p4";
+		}
+	
+	
+/*	.profile-port {background: darkcyan;}	
+	.profile-bio {background: orange;}	
+*/	
+	.port1 {
+		grid-area: p1;
+	}
+	.bio1 {
+		grid-area: b1;		
+	}
+	
+	.port2 {
+		grid-area: p2;	
+	}
+	.bio2 {
+		grid-area: b2;
+	}
+	
+	.port3 {
+		grid-area: p3;
+	}
+	.bio3 {
+		grid-area: b3;
+	}
+	
+	.port4 {
+		grid-area: p4;
+	}
+
+</style>	
+</head>
+	
+<body>
+	
+	<div class="wrapper">
+		
+		<h1>Who We Are</h1>
+		
+		<h2>Meet the Team!</h2>
+	
+	<div class="profile-container">
+	
+		<div class="profile-port port1"><img src="images/hibiscus.png" alt="flower"><br>
+		<p class="caption"> (Source: dbgg1979 – Creative-Commons License)</div>
+	
+		<div class="profile-bio bio1"><p> The national flower, <br><strong>Red Hibiscus</strong></p><p>Also known as Bunga Raya in Malay and it can be used to polish shoes!</p></div>	
+		
+		<div class="profile-port port2"><img src="images/tiger.png" alt="tiger"><br>
+		<p class="caption"> (Source: bobosh_t – Creative-Commons License)</div>
+	
+		<div class="profile-bio bio2"><p>The national animal, <strong>Malayan Tiger</strong></p><p>Commonly called Pak Belang (Uncle Stripes) by locals. All tiger cubs are born blind</p></div>	
+		
+		<div class="profile-port port3"><img src="images/hornbill.png" alt="bird"><br>
+		<p class="caption"> (Source: Steve Wilson – Creative-Commons License)</div>
+	
+		<div class="profile-bio bio3"><p>The national bird, <strong> Rhinoceros Hornbill</strong></p><p>They have strong necks</p></div>
+		
+		<div class="profile-port port4"><img src="images/flag-vertical.png" alt="flag"></div>
+		
+	</div><!-- profile container ends-->
+		
+	</div><!-- wrapper ends -->	
+	
+</body>
+</html>
